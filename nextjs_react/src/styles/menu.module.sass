@@ -1,0 +1,62 @@
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+@import "bootstrap/scss/maps"
+@import "bootstrap/scss/mixins"
+@import "bootstrap/scss/utilities"
+@import "bootstrap/scss/utilities/api"
+
+.category-list
+  @extend .d-flex
+  @extend .flex-column
+  @extend .h-100
+  @extend .rounded-start
+  border-style: solid
+  border-width: 0 5px 0 0
+  border-image-source: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff 50%, rgba(255, 255, 255, 0))
+  border-image-slice: 1
+
+.category-list-footer
+  @extend .d-flex
+  @extend .flex-column
+  @extend .flex-fill
+  background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0))
+
+.category-nav-link
+  @extend .px-3
+  @extend .py-4
+  @extend .text-center
+  @extend .fw-bold
+  @extend .fs-6
+  background-color: #eeeeee !important
+  color: black !important
+
+  &:hover:not(.active)
+    background-color: #555 !important
+    color: white !important
+
+  &.active
+    background-color: #04AA6D !important
+    color: white !important
+
+.dish-image
+  @extend .p-1
+  width: 220px
+  height: 180px
+
+.dish-discount
+  @extend .position-absolute
+  @extend .top-0
+  @extend .start-0
+  width: 55px
+  height: 50px
+
+.dish-discount-text
+  margin-top: 5px
+  margin-left: 5px
+  color: white
+
+.notification
+  @extend .position-fixed
+  z-index: 9999
+  right: 40px
+  bottom: 50px

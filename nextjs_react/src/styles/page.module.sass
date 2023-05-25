@@ -1,0 +1,149 @@
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+@import "bootstrap/scss/maps"
+@import "bootstrap/scss/mixins"
+@import "bootstrap/scss/utilities"
+@import "bootstrap/scss/utilities/api"
+
+.page-container
+  @extend .d-flex
+  @extend .flex-column
+  @extend .min-vh-100
+  background-image: url(/img/restaurant.jpg)
+  background-attachment: fixed
+  background-position: center center
+  background-size: cover
+
+.header-container
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .position-fixed
+  @extend .w-100
+  z-index: 10
+  height: 100px
+  background-color: #201e28ff
+  transition: background-color 0.5s ease-in-out
+
+  &.scrolled
+    background-color: rgba(32, 30, 40, 0.75)
+
+.header
+  @extend .d-flex
+  @extend .justify-content-between
+  @extend .align-items-center
+  @extend .h-100
+  width: 60%
+
+.header-left
+  @extend .d-flex
+  @extend .justify-content-between
+  @extend .align-items-center
+  @extend .h-100
+  width: 400px
+  height: 60%
+
+.header-right
+  @extend .d-flex
+  @extend .justify-content-evenly
+  @extend .align-items-center
+  @extend .float-end
+  width: 333px
+  height: 60%
+
+.nav-bar-link
+  @extend .fw-bold
+  color: white
+  text-decoration: none
+
+  &:hover
+    color: #08f3df
+    text-decoration: underline
+
+.logo
+  @extend .fs-3
+  color: white
+  font-family: Brush Script MT, cursive
+
+  &:hover
+    text-decoration: none
+
+.cart
+  @extend .rounded-circle
+  outline: 0 solid aliceblue
+  transition: outline-offset 0.2s ease
+  cursor: pointer
+
+  &:hover
+    outline-width: 3px
+    outline-offset: 5px
+    background-color: rgba(100, 84, 255, 0.2)
+
+.guest-actions
+  @extend .d-flex
+  @extend .justify-content-around
+  width: 200px
+
+.user-avatar
+  @extend .me-2
+  @extend .rounded-circle
+  @extend .fs-4
+  @extend .fw-bold
+  @extend .text-center
+  width: 35px
+  height: 35px
+  line-height: 35px
+  background: radial-gradient(circle, #4b4196, rgba(65, 126, 192, 0.2))
+  color: white
+
+.content-wrap
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .flex-fill
+  padding-top: 100px
+
+.content
+  @extend .w-75
+  background-color: rgba(70, 63, 51, 0.85)
+
+.scroll
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .align-items-center
+  @extend .rounded-circle
+  left: 40px
+  bottom: 30px
+  z-index: 5
+  width: 60px
+  height: 60px
+  background-color: rgba(50, 9, 94, 0.66)
+  color: white
+  transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out
+  cursor: pointer
+
+  &:hover
+    background-color: #000c0b
+
+.scroll-footer
+  @extend .position-absolute
+  background-color: rgb(36, 32, 70, 0.75)
+
+.spinner-md
+  width: 3rem !important
+  height: 3rem !important
+
+.spinner-lg
+  width: 5rem !important
+  height: 5rem !important
+
+.footer
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .align-items-center
+  @extend .w-100
+  height: 180px
+  border-style: solid
+  border-width: 3px 0 0 0
+  border-image-source: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 50%, rgba(255, 255, 255, 0))
+  border-image-slice: 1
+  background-color: #1a1a1a
+  color: white

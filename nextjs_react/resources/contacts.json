@@ -1,0 +1,28 @@
+{
+  "addressList": [
+    {
+      "country": "Беларусь",
+      "locality": "г.Минск",
+      "street": "ул.Пушкина",
+      "house": "д.25"
+    }
+  ],
+  "emailList": [
+    "example@google.com"
+  ],
+  "phoneList": [
+    "+375-29 123-45-67"
+  ],
+  "workTimeList": [
+    {
+      "days": "Пн-Пт",
+      "from": "09:00",
+      "to": "21:00"
+    },
+    {
+      "days": "Сб-Вс",
+      "from": "10:00",
+      "to": "18:00"
+    }
+  ]
+}

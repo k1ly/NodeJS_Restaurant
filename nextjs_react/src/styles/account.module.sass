@@ -1,0 +1,62 @@
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+@import "bootstrap/scss/maps"
+@import "bootstrap/scss/mixins"
+@import "bootstrap/scss/utilities"
+@import "bootstrap/scss/utilities/api"
+
+.nav-tab-header
+  @extend .ps-2
+  @extend .pt-2
+  @extend .rounded-top
+  background-color: rgba(69, 80, 94, 0.86)
+
+.nav-tab-link
+  @extend .fw-semibold
+  color: #bec1c2 !important
+
+  &.active
+    background-color: rgba(43, 54, 63, 0.75) !important
+    color: #e9f1f1 !important
+
+.status-list
+  @extend .d-flex
+  @extend .flex-column
+  @extend .h-100
+  @extend .rounded-start
+  border-style: solid
+  border-width: 0 5px 0 0
+  border-image-source: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff 50%, rgba(255, 255, 255, 0))
+  border-image-slice: 1
+
+.status-list-footer
+  @extend .d-flex
+  @extend .flex-column
+  @extend .flex-fill
+  background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0))
+
+.order-nav-link
+  @extend .px-3
+  @extend .py-4
+  @extend .text-center
+  @extend .fw-bold
+  @extend .fs-6
+  background-color: #eeeeee !important
+  color: black !important
+
+  &:hover:not(.active)
+    background-color: #85898d !important
+    color: white !important
+
+  &.active
+    background-color: #2e5162 !important
+    color: white !important
+
+.alert
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .position-fixed
+  @extend .w-100
+  z-index: 9999
+  top: 50px
+  left: 0

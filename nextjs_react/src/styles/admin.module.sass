@@ -1,0 +1,72 @@
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+@import "bootstrap/scss/maps"
+@import "bootstrap/scss/mixins"
+@import "bootstrap/scss/utilities"
+@import "bootstrap/scss/utilities/api"
+
+.tab-list
+  @extend .d-flex
+  @extend .flex-column
+  @extend .h-100
+  @extend .rounded-start
+  border-style: solid
+  border-width: 0 5px 0 0
+  border-image-source: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff 50%, rgba(255, 255, 255, 0))
+  border-image-slice: 1
+
+.tab-list-footer
+  @extend .d-flex
+  @extend .flex-column
+  @extend .flex-fill
+  background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0))
+
+.admin-nav-link
+  @extend .px-3
+  @extend .py-4
+  @extend .text-center
+  @extend .fw-bold
+  @extend .fs-6
+  background-color: #eeeeee !important
+  color: black !important
+
+  &:hover:not(.active)
+    background-color: #555 !important
+    color: white !important
+
+  &.active
+    background-color: #dc1449 !important
+    color: white !important
+
+.admin-content
+  @extend .flex-fill
+  background-color: rgba(255, 255, 255, 0.89)
+
+.pointer
+  cursor: pointer
+
+.null-table-cell
+  color: rgba(0, 0, 0, 0.5)
+  font-style: italic
+  content: "null"
+
+.dish-image-container
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .align-items-center
+  @extend .rounded
+  @extend .text-center
+  @extend .fs-5
+  @extend .fw-semibold
+  width: 200px
+  height: 200px
+  background-color: #e8e8e8
+
+  &.drag
+    background-color: #b7b7b7
+
+.notification
+  @extend .position-fixed
+  z-index: 9999
+  right: 40px
+  bottom: 50px

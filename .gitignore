@@ -1,16 +1,2 @@
 ### IDE ###
 .idea/
-
-### NodeJS ###
-node_modules/
-
-# TypeScript output #
-dist/
-
-# Logs #
-logs/
-*.log
-
-# Tests
-coverage/
-.nyc_output

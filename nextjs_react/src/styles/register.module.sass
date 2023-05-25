@@ -1,0 +1,55 @@
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+@import "bootstrap/scss/maps"
+@import "bootstrap/scss/mixins"
+@import "bootstrap/scss/utilities"
+@import "bootstrap/scss/utilities/api"
+
+.register-container
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .align-items-center
+  @extend .vh-100
+  background-color: #37284f
+
+.register
+  @extend .p-4
+  @extend .w-25
+  @extend .rounded-3
+  @extend .shadow-lg
+  border: 3px solid white
+  background-color: #ccaefa
+
+.show-password
+  background-color: #f5f5f5
+
+.password-check
+  @extend .fs-5
+  width: 330px
+
+.password-constraint
+  @extend .p-3
+  @extend .ps-4
+  color: red
+
+  &:before
+    position: relative
+    left: -15px
+    content: "❌"
+
+  &.valid
+    color: green
+
+    &:before
+      position: relative
+      left: -15px
+      content: "✔"
+
+.alert
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .position-fixed
+  @extend .w-100
+  z-index: 9999
+  top: 50px
+  left: 0

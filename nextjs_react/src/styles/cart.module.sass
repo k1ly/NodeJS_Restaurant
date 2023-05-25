@@ -1,0 +1,44 @@
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+@import "bootstrap/scss/maps"
+@import "bootstrap/scss/mixins"
+@import "bootstrap/scss/utilities"
+@import "bootstrap/scss/utilities/api"
+
+.dish-image
+  @extend .p-1
+  width: 220px
+  height: 180px
+
+.order-item-quantity
+  @extend .px-2
+  @extend .w-25
+  @extend .rounded-pill
+  @extend .border
+  @extend .border-secondary
+  width: 200px
+
+.order-item-minus
+  @extend .px-2
+  @extend .py-3
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none' color='%23000'%3E%3Cpath d='M20 12H4m8'/%3E%3C/svg%3E%0A") !important
+
+.order-item-plus
+  @extend .px-2
+  @extend .py-3
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none' color='%23000'%3E%3Cpath d='M20 12H4m8-8v16'/%3E%3C/svg%3E%0A") !important
+
+.notification
+  @extend .position-fixed
+  z-index: 9999
+  right: 40px
+  bottom: 50px
+
+.alert
+  @extend .d-flex
+  @extend .justify-content-center
+  @extend .position-fixed
+  @extend .w-100
+  z-index: 9999
+  top: 50px
+  left: 0

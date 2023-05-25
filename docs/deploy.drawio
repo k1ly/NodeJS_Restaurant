@@ -1,0 +1,83 @@
+<mxfile host="app.diagrams.net" modified="2023-06-05T13:29:39.698Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="KmzUHWecmE5qAUBE1m_E" version="21.1.1" type="device">
+  <diagram name="Страница 1" id="95xa_uUI_tan_qkih2UI">
+    <mxGraphModel dx="1003" dy="532" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;entryX=0.222;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.527;exitY=-0.002;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160.28285714285693" y="78.97" as="sourcePoint" />
+            <mxPoint x="240.30285714285696" y="78.71999999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-2" value="HTTPS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="r7BawbDD6Dx0yJaRMOYv-1">
+          <mxGeometry x="-0.0587" relative="1" as="geometry">
+            <mxPoint x="2" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-3" value="WebClient (Browser)" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20.002857142856897" y="20" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-4" value="React" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;jettyWidth=18;jettyHeight=8;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40.0028571428569" y="60" width="93" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-5" value="(OSType=any)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20.002857142856897" y="100" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-6" value="WebServer" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="240.002857142857" y="20" width="150" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-7" value="NestJS" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;jettyWidth=18;jettyHeight=8;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="271" y="130" width="80" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-8" value="Socket.io" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;jettyWidth=18;jettyHeight=8;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="260.002857142857" y="60" width="102" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="r7BawbDD6Dx0yJaRMOYv-10" target="r7BawbDD6Dx0yJaRMOYv-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-10" value="TypeORM" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;jettyWidth=18;jettyHeight=8;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="266.002857142857" y="200" width="92" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-11" value="TCP" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="318.002857142857" y="176" width="26" height="13" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-12" value="DB Server" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20.002857142856897" y="158" width="140" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-13" value="&lt;br style=&quot;font-size: 12px;&quot;&gt;Database" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40.0028571428569" y="200" width="93" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-14" value="" style="endArrow=classic;startArrow=classic;endFill=1;startFill=1;html=1;rounded=0;exitX=0;exitY=0;exitDx=50;exitDy=0;fontFamily=Helvetica;fontSize=12;exitPerimeter=0;entryX=0.139;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="160.00428571428552" y="229.17428571428582" as="sourcePoint" />
+            <mxPoint x="240.00428571428574" y="229.17428571428582" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-15" value="TCP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="r7BawbDD6Dx0yJaRMOYv-14">
+          <mxGeometry x="0.1333" y="-1" relative="1" as="geometry">
+            <mxPoint x="-5" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-16" value="(OSType=any,&lt;br&gt;Framework=NestJS)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="240.002857142857" y="250" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-17" value="(OSType=any, DBMS=MSSQLServer)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="20.002857142856897" y="244" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-18" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=6;endSize=6;startArrow=classic;startFill=1;" edge="1" parent="1" source="r7BawbDD6Dx0yJaRMOYv-7" target="r7BawbDD6Dx0yJaRMOYv-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="270.002857142857" y="120" as="sourcePoint" />
+            <mxPoint x="320.002857142857" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-19" value="WS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="319.002857142857" y="110" width="20" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="r7BawbDD6Dx0yJaRMOYv-67" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10" width="390" height="280" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,70 @@
+@import "bootstrap/scss/functions"
+@import "bootstrap/scss/variables"
+@import "bootstrap/scss/maps"
+@import "bootstrap/scss/mixins"
+@import "bootstrap/scss/utilities"
+@import "bootstrap/scss/utilities/api"
+
+.info-container
+  @extend .d-flex
+  @extend .justify-content-around
+  @extend .align-items-center
+  @extend .text-white
+  height: 20%
+
+.info-header
+  @extend .info-container
+  margin: 4%
+  padding: 7%
+
+.info-about
+  @extend .text-center
+  padding: 5%
+  background-color: rgba(237, 20, 61, 0.5)
+
+.info-showcase
+  @extend .info-container
+  margin: 3%
+  padding: 1%
+  background-color: rgba(164, 255, 234, 0.25)
+
+.info-dish
+  @extend .ps-4
+  width: 40%
+
+.info-menu
+  @extend .text-end
+  width: 80%
+  margin: 5%
+
+.info-extra
+  @extend .text-center
+  width: 70%
+  padding: 5%
+  background-color: rgba(117, 205, 241, 0.3)
+
+.info-title
+  font-family: Arial Rounded MT Bold, sans-serif
+
+.star
+  color: #faea8a
+  cursor: pointer
+
+  &.active
+    color: orange
+
+.review-user
+  @extend .fs-6
+  @extend .fw-semibold
+  color: #082f59
+
+.review-user-thumbnail
+  @extend .rounded-circle
+  width: 20px
+  height: 20px
+
+.notification
+  @extend .position-fixed
+  z-index: 9999
+  right: 40px
+  bottom: 50px
