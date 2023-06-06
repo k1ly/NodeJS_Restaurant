@@ -38,7 +38,12 @@ import { join } from "path";
         password: configService.get("DB_PASSWORD"),
         database: configService.get("DB_DATABASE"),
         autoLoadEntities: true,
-        extra: { trustServerCertificate: true }
+        ssl: true,
+        extra: {
+          ssl: {
+            rejectUnauthorized: false
+          }
+        }
       })
     }),
     AutomapperModule.forRoot({

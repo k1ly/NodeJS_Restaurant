@@ -1,5 +1,3 @@
-use restaurant;
-
 alter table users
     drop constraint user_role_fk;
 alter table users
@@ -35,74 +33,74 @@ drop table reviews;
 
 create table users
 (
-    id       bigint primary key identity,
+    id       bigint primary key generated always as identity,
     login    varchar(20)  not null unique,
     password varchar(200) not null,
-    name     nvarchar(40) not null,
+    name     varchar(40)  not null,
     email    varchar(40)  null,
     phone    varchar(15)  null,
-    blocked  bit          not null default 0,
+    blocked  boolean      not null default false,
     role_id  bigint       not null,
     order_id bigint       null
 );
 
 create table roles
 (
-    id   bigint primary key identity,
-    name nvarchar(30) not null unique
+    id   bigint primary key generated always as identity,
+    name varchar(30) not null unique
 );
 
 create table addresses
 (
-    id        bigint primary key identity,
-    country   nvarchar(30) not null,
-    locality  nvarchar(40) not null,
-    street    nvarchar(40) null,
-    house     nvarchar(10) not null,
-    apartment nvarchar(10) null,
-    user_id   bigint       not null
+    id        bigint primary key generated always as identity,
+    country   varchar(30) not null,
+    locality  varchar(40) not null,
+    street    varchar(40) null,
+    house     varchar(10) not null,
+    apartment varchar(10) null,
+    user_id   bigint      not null
 );
 
 create table dishes
 (
-    id          bigint primary key identity,
-    name        nvarchar(40)  not null,
-    description nvarchar(200) not null,
-    image_url   varchar(100)  null,
-    weight      smallint      not null default (0) check (weight >= 0),
-    price       money         not null default (0) check (price >= 0),
-    discount    smallint      not null default (0) check (discount >= 0 and discount <= 100),
-    category_id bigint        not null
+    id          bigint primary key generated always as identity,
+    name        varchar(40)  not null,
+    description varchar(200) not null,
+    image_url   varchar(100) null,
+    weight      smallint     not null default (0) check (weight >= 0),
+    price       money        not null default (0) check (price >= money(0)),
+    discount    smallint     not null default (0) check (discount >= 0 and discount <= 100),
+    category_id bigint       not null
 );
 
 create table categories
 (
-    id   bigint primary key identity,
-    name nvarchar(30) not null unique
+    id   bigint primary key generated always as identity,
+    name varchar(30) not null unique
 );
 
 create table orders
 (
-    id             bigint primary key identity,
-    price          money    not null default (0) check (price >= 0),
-    specified_date datetime null,
-    order_date     datetime null,
-    delivery_date  datetime null,
-    address_id     bigint   null,
-    status_id      bigint   not null,
-    customer_id    bigint   not null,
-    manager_id     bigint   null
+    id             bigint primary key generated always as identity,
+    price          money     not null default (0) check (price >= money(0)),
+    specified_date timestamp null,
+    order_date     timestamp null,
+    delivery_date  timestamp null,
+    address_id     bigint    null,
+    status_id      bigint    not null,
+    customer_id    bigint    not null,
+    manager_id     bigint    null
 );
 
 create table statuses
 (
-    id   bigint primary key identity,
-    name nvarchar(30) not null unique
+    id   bigint primary key generated always as identity,
+    name varchar(30) not null unique
 );
 
 create table order_items
 (
-    id       bigint primary key identity,
+    id       bigint primary key generated always as identity,
     quantity int    not null default (0) check (quantity >= 0),
     dish_id  bigint not null,
     order_id bigint not null
@@ -110,11 +108,11 @@ create table order_items
 
 create table reviews
 (
-    id      bigint primary key identity,
-    grade   smallint      null check (grade >= 1 and grade <= 5),
-    comment nvarchar(200) null,
-    date    datetime      not null default sysdatetime(),
-    user_id bigint        not null
+    id      bigint primary key generated always as identity,
+    grade   smallint     null check (grade >= 1 and grade <= 5),
+    comment varchar(200) null,
+    date    timestamp    not null default current_timestamp,
+    user_id bigint       not null
 );
 
 alter table users
